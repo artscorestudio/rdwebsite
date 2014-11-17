@@ -1,0 +1,31 @@
+{
+	"name" : "Romaric Doublet Website",
+	"description" : "Romaric Doublet Website based on WordPress",
+	"keywords" : [
+		"wordpress, jquery, html5, css3"
+	],
+	"homepage" : "http://www.romaricdoublet.fr",
+	"version" : "0.1.0",
+	"license" : "MIT License",
+	"authors" : [{
+			"name" : "Nicolas Claverie",
+			"email" : "info@artscore-studio.fr",
+			"homepage" : "http://www.artscore-studio.fr",
+			"role" : "Designer & Developer"
+		}
+	],
+	"support" : {
+		"email" : "info@artscore-studio.fr",
+		"bugtracker" : "https://github.com/artscorestudio/rd-swebsite/issues"
+	},
+	"type" : "project",
+	"require" : {
+		"components/jquery" : "1.11.*",
+		"components/bootstrap" : "dev-master",
+		"components/normalize.css" : "2.*"
+	},
+	"config" : {
+		"component-dir" : "assets",
+		"component-baseurl" : "/assets"
+	}
+}
