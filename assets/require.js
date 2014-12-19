@@ -2020,12 +2020,20 @@ var requirejs, require, define;
 var components = {
     "packages": [
         {
+            "name": "fullPage.js",
+            "main": "fullPage.js-built.js"
+        },
+        {
             "name": "bootstrap",
             "main": "bootstrap-built.js"
         },
         {
             "name": "jquery",
             "main": "jquery-built.js"
+        },
+        {
+            "name": "jquery-backstretch",
+            "main": "jquery-backstretch-built.js"
         }
     ],
     "shim": {

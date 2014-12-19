@@ -1,0 +1,23 @@
+.section1 {
+  background: url('../img/bg-section1.jpg') no-repeat top left;
+}
+.section1 .section-title {
+  display: block;
+  font-size: 24px;
+  color: #0d8582;
+  font-weight: 700;
+}
+.section1 .section-title .part {
+  display: block;
+}
+.section1 .section-subtitle {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.section2 .title {
+  background-color: #085755;
+}
+.section2 .content {
+  background-color: #0d8582;
+}

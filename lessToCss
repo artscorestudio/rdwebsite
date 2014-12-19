@@ -1,0 +1,1 @@
+lessc Resources/bootstrap/less/bootstrap.less Resources/bootstrap/css/bootstrap.css && lessc Resources/bootstrap/less/theme.less Resources/bootstrap/css/bootstrap-theme.css && lessc Resources/website/less/app.less Resources/website/css/app.css

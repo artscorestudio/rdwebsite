@@ -20,10 +20,66 @@
 	},
 	"type" : "project",
 	"require" : {
+	 	"robloach/component-installer": "dev-master",
 		"components/jquery" : "1.11.*",
 		"components/bootstrap" : "dev-master",
-		"components/normalize.css" : "2.*"
+		"components/normalize.css" : "2.*",
+		"alvarotrigo/fullPage.js": "dev-master",
+		"srobbin/jquery-backstretch": "dev-master"
 	},
+	"repositories": [
+	  {
+	      "type": "package",
+	      "package": {
+	          "name": "alvarotrigo/fullPage.js",
+	          "type": "component",
+	          "version": "dev-master",
+	          "source": {
+	              "url": "https://github.com/alvarotrigo/fullPage.js.git",
+	              "type": "git",
+	              "reference": "2.5.2"
+	          },
+	          "extra": {
+	              "component": {
+	                  "scripts": [
+	                      "jquery.fullPage.min.js",
+	                      "vendors/jquery.easings.min.js",
+	                      "vendors/jquery.slimscroll.min.js"
+	                  ],
+	                  "styles": [
+	                      "jquery.fullPage.css"
+	                  ]
+	              }
+	          },
+	          "require": {
+	              "robloach/component-installer": "*"
+	          }
+	      }
+	  },
+	  {
+	      "type": "package",
+	      "package": {
+	          "name": "srobbin/jquery-backstretch",
+	          "type": "component",
+	          "version": "dev-master",
+	          "source": {
+	              "url": "https://github.com/srobbin/jquery-backstretch.git",
+	              "type": "git",
+	              "reference": "2.0.4"
+	          },
+	          "extra": {
+	              "component": {
+	                  "scripts": [
+	                      "jquery.backstretch.min.js"
+	                  ]
+	              }
+	          },
+	          "require": {
+	              "robloach/component-installer": "*"
+	          }
+	      }
+	  }
+	],
 	"config" : {
 		"component-dir" : "assets",
 		"component-baseurl" : "/assets"

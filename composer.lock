@@ -4,20 +4,46 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "69425381e7492d845d123ae5e202a6a9",
+    "hash": "0570ef42cbfeab182c6cf838219eb0ec",
     "packages": [
+        {
+            "name": "alvarotrigo/fullPage.js",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alvarotrigo/fullPage.js.git",
+                "reference": "2.5.2"
+            },
+            "require": {
+                "robloach/component-installer": "*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.fullPage.min.js",
+                        "vendors/jquery.easings.min.js",
+                        "vendors/jquery.slimscroll.min.js"
+                    ],
+                    "styles": [
+                        "jquery.fullPage.css"
+                    ]
+                }
+            },
+            "time": "2014-12-12 15:47:50"
+        },
         {
             "name": "components/bootstrap",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
-                "reference": "c571792e5f6f90541bf7e2ba9c6d64da1d71e06e"
+                "reference": "cf76020235d38fa45e368b458e82f9b84087562e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/c571792e5f6f90541bf7e2ba9c6d64da1d71e06e",
-                "reference": "c571792e5f6f90541bf7e2ba9c6d64da1d71e06e",
+                "url": "https://api.github.com/repos/components/bootstrap/zipball/cf76020235d38fa45e368b458e82f9b84087562e",
+                "reference": "cf76020235d38fa45e368b458e82f9b84087562e",
                 "shasum": ""
             },
             "require": {
@@ -33,7 +59,7 @@
                         "js/bootstrap.js"
                     ],
                     "files": [
-                        "js/bootstrap.min.js",
+                        "js/*.js",
                         "css/*.css",
                         "fonts/*",
                         "less/mixins/*.less",
@@ -71,7 +97,7 @@
                 "responsive",
                 "web"
             ],
-            "time": "2014-11-12 19:50:27"
+            "time": "2014-11-18 17:46:00"
         },
         {
             "name": "components/jquery",
@@ -154,16 +180,16 @@
         },
         {
             "name": "kriswallsmith/assetic",
-            "version": "v1.2.0",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "df991c124a2212371443b586a1be767500036dee"
+                "reference": "b20efe38845d20458702f97f3ff625d80805897b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/df991c124a2212371443b586a1be767500036dee",
-                "reference": "df991c124a2212371443b586a1be767500036dee",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/b20efe38845d20458702f97f3ff625d80805897b",
+                "reference": "b20efe38845d20458702f97f3ff625d80805897b",
                 "shasum": ""
             },
             "require": {
@@ -224,23 +250,24 @@
                 "compression",
                 "minification"
             ],
-            "time": "2014-10-14 14:45:32"
+            "time": "2014-12-12 05:04:05"
         },
         {
             "name": "robloach/component-installer",
-            "version": "0.0.12",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/RobLoach/component-installer.git",
-                "reference": "1864f25db21fc173e02a359f646acd596c1b0460"
+                "reference": "7aaa3d20fce87030d5f4094f4394c7c1e1f0e19d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/1864f25db21fc173e02a359f646acd596c1b0460",
-                "reference": "1864f25db21fc173e02a359f646acd596c1b0460",
+                "url": "https://api.github.com/repos/RobLoach/component-installer/zipball/7aaa3d20fce87030d5f4094f4394c7c1e1f0e19d",
+                "reference": "7aaa3d20fce87030d5f4094f4394c7c1e1f0e19d",
                 "shasum": ""
             },
             "require": {
+                "composer-plugin-api": "1.0.0",
                 "kriswallsmith/assetic": "1.*",
                 "php": ">=5.3.2"
             },
@@ -263,26 +290,46 @@
             "authors": [
                 {
                     "name": "Rob Loach",
-                    "email": "robloach@gmail.com",
                     "homepage": "http://robloach.net"
                 }
             ],
             "description": "Allows installation of Components via Composer.",
-            "time": "2013-08-31 23:46:48"
+            "time": "2014-09-16 17:57:47"
+        },
+        {
+            "name": "srobbin/jquery-backstretch",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/srobbin/jquery-backstretch.git",
+                "reference": "2.0.4"
+            },
+            "require": {
+                "robloach/component-installer": "*"
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "scripts": [
+                        "jquery.backstretch.min.js"
+                    ]
+                }
+            },
+            "time": "2013-06-19 21:02:24"
         },
         {
             "name": "symfony/process",
-            "version": "v2.5.6",
+            "version": "v2.6.1",
             "target-dir": "Symfony/Component/Process",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "9bbacbb3a7a27b17c0d51e2f126f59e0e588ad3a"
+                "reference": "bf0c9bd625f13b0b0bbe39919225cf145dfb935a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/9bbacbb3a7a27b17c0d51e2f126f59e0e588ad3a",
-                "reference": "9bbacbb3a7a27b17c0d51e2f126f59e0e588ad3a",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/bf0c9bd625f13b0b0bbe39919225cf145dfb935a",
+                "reference": "bf0c9bd625f13b0b0bbe39919225cf145dfb935a",
                 "shasum": ""
             },
             "require": {
@@ -291,7 +338,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.5-dev"
+                    "dev-master": "2.6-dev"
                 }
             },
             "autoload": {
@@ -315,16 +362,20 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2014-10-01 05:50:18"
+            "time": "2014-12-02 20:19:20"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "components/bootstrap": 20
+        "robloach/component-installer": 20,
+        "components/bootstrap": 20,
+        "alvarotrigo/fullpage.js": 20,
+        "srobbin/jquery-backstretch": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
